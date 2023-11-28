@@ -1,0 +1,35 @@
+/*Whole body style*/
+body {
+    margin: 0px;
+}
+
+/*Main container*/
+.admin-dashboard.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+/*Left side dashboard*/
+.dashboard {
+    height: 740px;
+    background-color: aqua;
+    border: 1px solid;
+}
+
+/*Right side container*/
+.user.container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+/*Top search bar*/
+.top.search {
+    border: 1px solid;
+    background-color: aliceblue;
+}
+
+/*Main article with projects etc.*/
+.main.article {
+    border: 1px solid;
+    background-color: antiquewhite;
+}
