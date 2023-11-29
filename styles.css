@@ -153,4 +153,47 @@ button:nth-child(2) {
 /*Main body styles*/
 .main.article {
     background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+.your.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 50px repeat(3, 1fr);
+    gap: 30px;
+    padding: 15px;
+}
+
+.your.projects > div {
+    background-color: white;
+    box-shadow: 0px 4px 5px rgb(175, 175, 175);
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.project.header {
+    grid-column: 1 / -1;
+}
+
+h3 {
+    margin: 0;
+}
+
+.your.projects > div > div > p {
+    color: grey;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.icons-for-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    gap: 10px;
+    justify-items: end;
+    justify-content: end;
+    align-content: end;
 }
